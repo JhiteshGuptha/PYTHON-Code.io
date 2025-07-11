@@ -1,7 +1,7 @@
 # Arithmetic Operators
 
-numberOne = int(input("Enter First number: "))
-numberTwo = int(input("Enter Second number: "))
+numberOne = int(input("Enter First number to perform Operations: "))
+numberTwo = int(input("Enter Second number to perform Operations: "))
 
 print()
 print("|----Arithmetic----|")
@@ -16,7 +16,7 @@ print(numberOne ** numberTwo) # Power
 # Assignment Operators / Augmented operator
 
 print()
-numberThree = int(input("Enter Third number: "))
+numberThree = int(input("Enter Third number to perform Operations: "))
 
 print()
 print("|----Assignment----|")
@@ -73,6 +73,7 @@ elif temperature <= 28 and not isSunny: # Not Operator
     print("It is Pleasant outside 🌥️")
 elif 28 > temperature > 10 and isSunny:
     print("It is Warm outside ⛅️")
+print()
 
 # Or Operator
 
@@ -82,4 +83,25 @@ elif temperature < 28 or not isRaining: # Not Operator
     print("The Event is scheduled 😁")
 
 
+# Membership Operator = used to test whether a value or variable is found in a sequence
+#                     = (string, list, tuple, set or dictionary)
+#                     = 1. in
+#                     = 2. not in
 
+print()
+print("|----Membership----|")
+print()
+word = "ORANGE"
+letter = input("Guess a letter in the secret word: ").upper()
+if letter in word:
+    print(f"There is {letter} in the Word 🥳")
+else:
+    print(f"{letter} is not in the word 😕")
+print()
+
+numbers = [1,2,3,4,5,6,7,8,9]
+number = int(input("Guess a Number: "))
+if number not in numbers:
+    print(f"{number} is not in the List 😕")
+else:
+    print(f"{number} is in the List 🥳")
