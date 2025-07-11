@@ -164,4 +164,33 @@ for lists in groceries:
         print(elements)
 print()
 
+# List Comprehension = A concise way to create Lists in Python
+#                    = Compact and easier to read than Traditional Loops
+#                    = [expression for value in iterable if condition]
+#                    = Expression is returned/added inside the list
 
+# Basic List Creation
+
+square = []
+for i in range(1, 11):
+    square.append(i * i)
+print(square)
+print()
+
+# Using List Comprehension
+
+square = [i * i for i in range(1, 11)]
+print(square)
+print()
+
+fruits = [fruit.capitalize() for fruit in ["apple", "orange", "banana", "mango"]]
+print(fruits)
+print()
+
+# Using List Comprehension with condition
+
+positiveNumbers = [num for num in range(-5, 6) if num >= 0]
+negativeNumbers = [num for num in range(-5, 6) if num < 0]
+print(positiveNumbers)
+print(negativeNumbers)
+print()
